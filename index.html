@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wrapped Wonders — Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="logo.jpg" alt="Wrapped Wonders" class="logo" />
+      <h1>Wrapped Wonders</h1>
+    </div>
+
+    <div class="searchbar">
+      <input id="searchInput" type="search" placeholder="Search baskets, bouquets, boxes..." />
+      <select id="catSelect">
+        <option value="all">All Categories</option>
+        <option value="basket">Baskets</option>
+        <option value="bouquet">Bouquets</option>
+        <option value="box">Boxes</option>
+      </select>
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="header-actions">
+      <button id="cartBtn" class="cart-btn">Cart (<span id="cartCount">0</span>)</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Handmade gifts for every moment</h2>
+        <p>Customize baskets, bouquets, and gift boxes — sent with love across Pakistan.</p>
+        <a class="cta" href="#products">Shop Now</a>
+      </div>
+      <div class="hero-img">
+        <img src="bouquet1.jpg" alt="Wrapped Wonders" />
+      </div>
+    </section>
+
+    <section id="products" class="products-section">
+      <h3>Featured Products</h3>
+      <div id="productList" class="product-grid">
+        <!-- Products injected by JS -->
+      </div>
+    </section>
+
+    <section class="about">
+      <h3>About Us</h3>
+      <p>Wrapped Wonders is a small, handcrafted gifts store focused on beautiful, customizable baskets, bouquets, and boxes. Hum quality aur customer khushi pe bohat zor detay hain.</p>
+      <ul>
+        <li>Fast delivery across major cities in Pakistan</li>
+        <li>Custom messages & wrapping</li>
+        <li>Secure payment and cash-on-delivery options</li>
+      </ul>
+    </section>
+
+    <section class="reviews">
+      <h3>Customer Reviews</h3>
+      <div class="review-grid">
+        <blockquote>
+          "Amazing bouquet — it arrived fresh and beautiful!"<cite> — Ayesha, Lahore</cite>
+        </blockquote>
+        <blockquote>
+          "Packaging was perfect. Loved the customization option!"<cite> — Ali, Karachi</cite>
+        </blockquote>
+        <blockquote>
+          "Fast delivery and great customer support." <cite> — Sana, Islamabad</cite>
+        </blockquote>
+        <blockquote>
+          "My friend loved the gift box. Highly recommend." <cite> — Omar, Faisalabad</cite>
+        </blockquote>
+        <blockquote>
+          "Value for money — will order again." <cite> — Zara, Multan</cite>
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>Contact</strong><br />
+      Phone: +92 300 1234567<br />
+      Email: wrappedwonders@gmail.com
+    </div>
+    <div>© <span id="year"></span> Wrapped Wonders by Mariam , Irsha & Durood </div>
+  </footer>
+
+  <!-- Cart sidebar -->
+  <aside id="cartSidebar" class="cart-sidebar hidden">
+    <header>
+      <h4>Your Cart</h4>
+      <button id="closeCart">Close</button>
+    </header>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <div>Total: <strong id="cartTotal">PKR 0</strong></div>
+      <button id="checkoutBtn" class="checkout">Checkout</button>
+      <button id="clearCart" class="clear">Clear Cart</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
